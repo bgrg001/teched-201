@@ -4,6 +4,6 @@
 - writing HTML code inclusive of event listener and event handler.
 - JS code inclusive of an event inclusive of if condition, console log, checkpoint and alert. 
 - Creating a repository, sub-repo and files. 
-- Understanding how the internet works. 
+- Understanding how the internet works: https://www.youtube.com/watch?v=x3c1ih2NJEg. 
 
 
