@@ -1,0 +1,46 @@
+```
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+
+    
+  </head>
+
+  <body>
+
+    <header>Facts about me</header>
+<ul>
+  <li id="name">My name is George</li>
+  <li id="age">I am 30 years of age</li>
+  <li id="reside">I was born in Leytonstone in England, and live in London</li>
+  <li id="colour">My favourite colour is dark green</li>
+</ul>
+
+    <button onclick="clicking()">add your details here</button>
+
+    <script>
+
+        function clicking () {
+
+          let firstname = prompt('Please enter your first name here');
+          
+      let age = prompt('How old are you?');
+      let live = prompt('where do you live?');
+      let colour = prompt('what is your favourite colour?');
+
+          
+        document.getElementById("name").innerHTML = firstname;
+      document.getElementById("age").innerHTML = age;
+      document.getElementById("reside").innerHTML = live; 
+        document.getElementById("colour").innerHTML = colour;
+
+      }
+    </script>
+    
+  </body>
+
+  
+</html>
+```
