@@ -1,43 +1,17 @@
-```
-<!DOCTYPE html>
-<html>
+# Lab 02 
 
-<head>
-</head>
+Arrays and 'or' function in console.log
 
-<body>
-
-  <h1 id="example">Class-02 Example</h1>
-  <p id="here">Jez details here</p>
-  <button onclick="clickHandler()">Click</button>
-
-  <script>
-
-    var studentsInTheClass = [];//[] --> arrays
-
-    function clickHandler() {
-
-      var newStudent = prompt("Enter new student name");
-
-      studentsInTheClass.push(newStudent);
+- Basic HTML set up 
+- h1 tag, button, and paragraph 
+- button has an event listener and handler on it
+- variable called "studentsinclass" = [];//[] this is an array?
+- function, variation is 'newstudent' equalling a prompt which asks 'Enter new name?'
+- studentsintheclass.push(newStudent) - which adds a new student to the list.
+- List appears in console.log
+- if function folllows with an 'or' which is || and options in quotation marks
+- be consistent with quotation marks. 
+- 
 
 
 
-      console.log(studentsInTheClass);
-
-      if (newStudent == 'Jez' || newStudent == "jez" || newStudent == "j") {
-
-        document.getElementById('here').innerHTML = "jex welcome to the evening class from the morning class";
-
-      }else{
-        document.getElementById('here').innerHTML = "jez  is not welcome to the evening class from the morning class";
-      }
-
-
-    }
-
-  </script>
-</body>
-
-</html>
-```
