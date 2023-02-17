@@ -12,6 +12,6 @@
 - **A setter will mean a new number in inputted, changing the number**
 - Function getsecretnumber (is what we labelled it) {// gets the secret number console.log(secretnumnber)}
 - Function setssecretnumebr (is whatr we labelled it) {// sets the secret number console.log("set the secret number");
-- **in quotation marks because someone is inputting the data
+- **in quotation marks because someone is inputting the data**
 
 
