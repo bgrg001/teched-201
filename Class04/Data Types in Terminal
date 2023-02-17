@@ -1,0 +1,57 @@
+```
+<!DOCTYPE html>
+<html>
+
+  
+</html>#
+
+<body>
+
+  <button></button>
+
+  <script> 
+  
+
+  
+      // numeric data type -->1,2,3...4.5
+    // string data type -->"fjofsjfjo", 'fjsdfjfje'
+    // boolean daa typet--> true or fase
+    //object --> []{} object orienteted programming language everythign is object
+    //fucntion data tyupe
+
+    //javascript sees HTML as a document
+    
+     console.log(document);
+
+
+// numeric data type 
+    var paisley = 1.2
+    console.log (typeof(paisley));
+
+
+//boolean data type
+var jane = true; 
+    console.log (typeof(jane));
+
+//function data type
+    var george = function rugby(){console.log ('rugby')}
+console.log(george);
+
+//object data type
+    var carla = document;
+    console.log(typeof(carla));
+
+    var obj = {};
+    console.log(typeof(obj));
+
+
+      
+      </script>
+
+
+
+  
+</body>
+```
+
+</html>
