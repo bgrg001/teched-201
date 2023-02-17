@@ -1,4 +1,4 @@
-# Class 01 06/02/2023 
+# Class 01 work includes labs, own practice and V example
 
 # Class 1 included 
 - writing HTML code inclusive of event listener and event handler.
