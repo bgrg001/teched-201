@@ -11,8 +11,6 @@ George starting 201 of the coding bootcamp
 - If function and 'or'
 
 # Class three
-
-# Class three
 - CSS styling including # and linking to a HTML.
 
 # Class four 
