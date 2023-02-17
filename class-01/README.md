@@ -18,6 +18,22 @@ The task from V
 - 4️⃣  | This list should contain four list items with name, age, country and fav color
 - 5️⃣  | the values you enter in your prompt should be rendered in the frontend and the text color should be the fav color you entered
 
+# Lab 1a
+Task from V 
+- Create a basic HTML
+- Add basic CSS styling 
+- Add JavaScript to it
+- JS Files should contain Console.log, a prompt and an alert.
+
+Answer from George
+- HTML set up inclusive of body, head, he tags
+- Button tags including click here, help me, don't click me, and log in. 
+- Event listeners and event handlers included in the button tag.
+- Javascript starting with a checkpoint - console.log("checkpoint")
+- var is whoareyou, whatareyou age attached to prompts asking question
+- If function - if (whoare you == "Yes") compare/equal to function is whoare equal to yes.
+- 3 other if functions with console including an if else function.
+
 # Lab 01B
 - Here you have an unorder list with list of text including name, age, place of birth and favourite colour
 - Each piece of text in the list has an id to be refenced in the JavaScript later on
