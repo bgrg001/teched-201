@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function clickhandler() {
+      var city = prompt("Enter a city member");
+
+      // step 1: create an element
+      var listElement = document.createElement("li");
+      listElement.innerText = city;
+
+      // step 2: Append the child to the parent
+      document.getElementById("parent").appendChild(listElement);
+    }
+  </script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head> </head>
+
+  <body>
+    <button onclick="clicked()">Click here to answer some questions</button>
+    <h1 id="code">Learning to code is fun.</h1>
+    <h1 id="tabletennis">I will beat V at table tennis on Friday.</h1>
+    <h1 id="blue">My favourite colour isn't green.</h1>
+    <h1 id="mormon">My favourite play is The Book of Mormon.</h1>
+    <h1 id="sky">The sky is bright blue today.</h1>
+
+    <script>
+      console.log(document.getElementbyId("code").innerHTML);
+
+      function clicked() {
+        var code = prompt("Code is fun right?");
+        var tabletennis = prompt("Will you be V at table tennie?");
+        var colour = prompt("What is your favourite colour then?");
+        var mormon = prompt("Why is it?");
+        var sky = prompt("Were there clouds?");
+
+        document.getElementById("code").innerText = "It sure is!";
+        document.getElementById("tabletennis").innerText = "YES";
+        document.getElementById("blue").style.color = "blue";
+        document.getElementById("mormon").innerText = "It is funny";
+        document.getElementById("sky").innerText = "yes";
+      }
+    </script>
+  </body>
+</html>
