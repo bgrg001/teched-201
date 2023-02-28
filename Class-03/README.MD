@@ -15,3 +15,6 @@
 - **in quotation marks because someone is inputting the data**
 
 
+CSS notes .class and #id
+
+
