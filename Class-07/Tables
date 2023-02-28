@@ -1,0 +1,53 @@
+```
+<!DOCTYPE html>
+<html>
+    <style>
+
+        table {
+            background-color: antiquewhite;
+            border: 1px solid;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td {
+            background-color: lightseagreen;
+            border: 1px solid;
+            color: white;
+
+        }
+
+        tr {
+            background-color: palevioletred;
+            color: white;
+        }
+
+    </style>
+<head>
+</html>
+
+<body>
+    <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+</body>
+
+</head>
+</html>
+```
