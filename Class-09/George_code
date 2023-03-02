@@ -1,0 +1,51 @@
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        border: 1px solid black;
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Pirates and their favourite drink and meal</h1>
+    <button onclick="clicked()">Click here pirate!</button>
+    <ul id="addToList">
+      <li id="name1">Name:<span id="name"></span></li>
+      <li id="meal1">Favourite meal: <span id="meal"></span></li>
+      <li id="drink1">Favourite drink: <span id="drink"></span></li>
+      <div id="pirates"></div>
+    </ul>
+
+    <script>
+      function clicked() {
+        var nameOfPirate = prompt("What is your name pirate?");
+        var favouriteMeal = prompt("What is your favourite meal?");
+        var favouriteDrink = prompt("And drink?");
+
+        document.getElementById("name").innerHTML = nameOfPirate;
+        document.getElementById("meal").innerHTML = favouriteMeal;
+        document.getElementById("drink").innerHTML = favouriteDrink;
+
+        var listElement = document.createElement("ul");
+
+        var pirateLi = document.createElement("li");
+        pirateLi.innerText = nameOfPirate;
+        var mealOne = document.createElement("li");
+        mealOne.innerText = favouriteMeal;
+        var drinkOne = document.createElement("li");
+        drinkOne.innerText = favouriteDrink;
+
+        listElement.appendChild(pirateLi);
+        listElement.appendChild(mealOne);
+        listElement.appendChild(drinkOne);
+
+        document.getElementById("pirates").appendChild(listElement);
+      }
+    </script>
+  </body>
+</html>
+```
