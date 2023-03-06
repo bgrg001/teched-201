@@ -1,5 +1,5 @@
 ## tables
-- created a table using <table> <tr> <th> <td>
+- created a table 
   
 ## new element (creating a new element and appending child)
 - create variable with prompt
