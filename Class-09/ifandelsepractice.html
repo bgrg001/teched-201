@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <button onclick="clickHere ()">Guess the number</button>
+  </head>
+  <body>
+    <script>
+      var letTheNumberBe = 20;
+
+      function clickHere() {
+        var guessTheNumber = prompt("what is the number?");
+        console.log("it's working");
+
+        if (guessTheNumber == letTheNumberBe) {
+          alert("you are correct");
+        } else if (letTheNumberBe > guessTheNumber) {
+          alert("too low");
+        } else if (letTheNumberBe < guessTheNumber) {
+          alert("too high");
+        }
+      }
+    </script>
+  </body>
+</html>
