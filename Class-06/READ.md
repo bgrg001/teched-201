@@ -1,3 +1,17 @@
+##index.html
+Using get Element ID to render text input on to the main page
+- created variable with prompt
+- add getElementbyUd with innertext/style.color 
+
+
+## NewElement.HTML 
+This is how you do it:
+- button
+- function clickhandler()
+- create varialble/prompt
+- create listElement (var listelement = document.createElement("li")
+- append child so hey document, get ElementByID("parent").appendChild(listElement); 
+
 ## Webpage.HTML (append list to Salmon Cookies)
 This code includes:
 - CSS (positioning) style
