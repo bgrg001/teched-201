@@ -1,4 +1,4 @@
-##index.html
+##cindex.html
 Using get Element ID to render text input on to the main page
 - created variable with prompt
 - add getElementbyUd with innertext/style.color 
