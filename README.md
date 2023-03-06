@@ -21,4 +21,18 @@ George starting 201 of the coding bootcamp
 - Create variable (prompt), Get element by ID and change the inner text and color of text
 - Parent/child element - appending
 
+## Class Seven
+- Creating tables 
+- Creating new element and append child to parent element
+- Creating objects and assigning them properties using array and then logging the console log
+- Creating prompts, producing inner HTML text and appending list
+
+## Class eight 
+- Basic table
+- CCS flex
+
+## Class nine 
+- Appending a table practice 
+- Appending a list
+
 
