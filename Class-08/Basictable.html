@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #header {
+        border: 1px solid black;
+        background-color: lightseagreen;
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+      }
+      th {
+        border: 10px solid palegreen;
+        background-color: lightgrey;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      #tablediv {
+        border: 10px solid black;
+        background-color: lightseagreen;
+        position: fixed;
+        top: 100px;
+        display: flex;
+      }
+
+      tr {
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <div id="header"><button onclick="clickHandler()">Click here</button></div>
+
+  <body>
+    <div id="tablediv">
+      <table id="parent">
+        <tr>
+          <th>Name</th>
+          <th>Favourite City</th>
+          <th>University town</th>
+          <th>Town raised in</th>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function clickHandler() {
+        console.log("working");
+
+        var yourName = prompt("What is your name?");
+        var yourFave = prompt("Where is your favourite city?");
+        var universityTown = prompt("Where did you go to university?");
+        var townRaised = prompt("Which town did you grow up in?");
+
+        var addRow = document.createElement("tr");
+        var addYourName = document.createElement("td");
+        var addYourFave = document.createElement("td");
+        var addUniversityTown = document.createElement("td");
+        var addTownRaised = document.createElement("td");
+
+        addYourName.innerHTML = yourName;
+        addYourFave.innerHTML = yourFave;
+        addUniversityTown.innerHTML = universityTown;
+        addTownRaised.innerHTML = townRaised;
+
+        addRow.appendChild(addYourName);
+        addRow.appendChild(addYourFave);
+        addRow.appendChild(addUniversityTown);
+        addRow.appendChild(addTownRaised);
+
+        var parentElement = document.getElementById("parent");
+        parentElement.appendChild(addRow);
+      }
+    </script>
+  </body>
+</html>
