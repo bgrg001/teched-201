@@ -1,0 +1,36 @@
+"use strict";
+
+console.log("debug.js file is loaded");
+
+/*
+Multiple lines
+for commenting
+*/
+
+// Variables
+
+var a = 1; // number
+var b = "george dave"; // string
+var c = true; // boolean
+var d = {}; // object
+var e = []; // array
+var f = ""; // undefined
+var g = 2;
+
+/*
+
+    -This function is for adding two numbers
+    @param1:number
+    @param2:number
+
+*/
+function add(a, b) {
+  var a = a;
+  var b = b;
+
+  return a + b;
+}
+
+// Call the function
+console.log(add(1, 2)); // 1,2 might come from a form
+ 
