@@ -32,6 +32,14 @@ George starting 201 of the coding bootcamp
 - CCS flex
 
 ## Class nine 
+
+## Claire thirteen
+- Examples of local storage
+
+## Class Fourteen
+- Charts.js
+- Local storage 
+- V local storage
 - Appending a table practice 
 - Appending a list
 
