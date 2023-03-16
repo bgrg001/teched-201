@@ -36,6 +36,11 @@ George starting 201 of the coding bootcamp
 - Prompt asking question, appending input to list and rendering to front end
 - creating objects and assigning properties 
 
+## Class ten
+- Assigning: Creating objects in javascript and assigning properties including getting information into the back end
+- Using THIS 
+COMPLETE THIS
+
 ## Class eleven 
 - Form 1: Food database
 - Form 2: Best form example with table and rendered to front end
