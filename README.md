@@ -33,7 +33,13 @@ George starting 201 of the coding bootcamp
 
 ## Class nine 
 
-## Claire thirteen
+## Class twelve
+- CSS Transformations
+- Multimedia 
+- Headspace
+- Video
+
+## Class thirteen
 - Examples of local storage
 
 ## Class Fourteen
