@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+        <form onsubmit="formHandler()">
+            <input type="text" placeholder="Enter Name Here" name="name"></br>
+            <input type="text" placeholder="Enter favourite colour here" name="faveColour"></br>
+            <button type="submit" value="save" name="action">Save</button>
+            <button type="submit" value="load" name="action">Load</button>
+            </form>
+        </div>
+
+        <script>
+            
+            function formHandler(){
+                event.preventDefault(); 
+
+            let nameEntered = event.target.name.value; 
+            let colourEntered = event.target.faveColour.value;
+
+            let action = event.target.action.value;
+
+            if(action == "save"){
+           localStorage.setItem(nameEntered,colourEntered);
+            }
+        }
+            
+        </script>
+
+
+            
+
+    </body>
+</html>
