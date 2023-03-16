@@ -32,6 +32,7 @@ George starting 201 of the coding bootcamp
 - CCS flex
 
 ## Class nine 
+- if and else (game where you guess the number including ==, >,<)
 
 ## Class eleven 
 - Form 1: Food database
