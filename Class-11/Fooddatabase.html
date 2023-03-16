@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="header"></dic><h1>Complete order form</h1></div>
+    <div id="main">
+      <div id="left">
+        <form id="formID" style="padding: 10px">
+          <label for="foodType">Food Type</label><br />
+          <input type="text" id="foodtype" name="foodType" required /><br />
+          <label for="foodName">Food Name</label><br />
+          <input type="text" id="foodName" name="foodName" required /><br />
+          <label for="foodQuantity">Food Quantity</label><br />
+          <input
+            type="number"
+            id="foodQuantity"
+            name="foodQuantity"
+            required="foodQuantity"
+          /><br />
+          <input id= "submit1" type="submit" value="submit your order" onclick="clickHandler()"/>
+        </form>
+      </div>
+      <div id="hero">
+        <h2 id="type">Food Type</h2>
+        <h2 id="name">Food Name</h2>
+        <h2 id="quantity">Food Quantity</h2>
+      </div>
+      </div>
+      <script>
+        var arrayList = [];
+
+        var getForm = document.getElementById("formID");
+
+        class foodOrder {
+          constructor(_foodType, _foodName, _foodQuantity) {
+            this.foodType = _foodType;
+            this.foodName = _foodName;
+            this.foodQuantity = _foodQuantity;
+          }
+        }
+        // storage variables
+        var foodType = "";
+        var foodName = "";
+        var foodQuantity = "";
+
+        getForm.addEventListener("submit", function () {
+          event.preventDefault();
+
+          foodType = event.target.foodType.value;
+          foodName = event.target.foodName.value;
+          foodQuantity = event.target.foodQuantity.value;
+
+          var foodOrderDetails = new foodOrder(
+            foodType,
+            foodName,
+            foodQuantity
+          );
+
+          console.log(foodOrderDetails);
+        });
+
+        function clickHandler() {
+
+         var ulEle = document.createElement ("ol");
+
+          var foodTypeLi =  document.createElement("li");
+          foodTypeLi.innerText = foodType;
+
+          var foodNameLi = document.createElement("li");
+          foodNameLi.innerText = foodName;
+
+          var foodQuantityLi = document.createElement("li");
+          foodQuantityLi.innerText = foodQuantity;
+
+          
+          ulEle.appendChild(foodTypeLi);
+          ulEle.appendChild(foodNameLi);
+          ulEle.appendChild(foodQuantityLi);
+       
+
+          document.getElementById("hero").appendChild(ulEle);
+        }
+
+  
+      </script>
+    </div>
+  </body>
+</html>

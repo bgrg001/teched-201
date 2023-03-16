@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        table {
+            border: solid 5px lightcoral;
+        }
+
+        td {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            margin: 5px;
+
+        }
+    </style> </head>
+  <body>
+    <div id="header"></dic><h1>Complete order form</h1></div>
+    <div id="main">
+      <div id="left">
+        <form id="formID" style="padding: 10px">
+          <label for="foodType">Food Type</label><br />
+          <input type="text" id="foodtype" name="foodType" required /><br />
+          <label for="foodName">Food Name</label><br />
+          <input type="text" id="foodName" name="foodName" required /><br />
+          <label for="foodQuantity">Food Quantity</label><br />
+          <input
+            type="number"
+            id="foodQuantity"
+            name="foodQuantity"
+            required="foodQuantity"
+          /><br />
+          <input id= "submit1" type="submit" value="submit your order" onclick="clickHandler()"/>
+        </form>
+      </div>
+      <div id="hero">
+        <table id="hero1">
+          <tr>
+        <td id="type">Food Type</td>
+        <td id="name">Food Name</td>
+        <td id="quantity">Food Quantity</td>
+        </tr>
+        </table>
+      </div>
+      </div>
+      <script>
+        var arrayList = [];
+
+        var getForm = document.getElementById("formID");
+
+        class foodOrder {
+          constructor(_foodType, _foodName, _foodQuantity) {
+            this.foodType = _foodType;
+            this.foodName = _foodName;
+            this.foodQuantity = _foodQuantity;
+          }
+        }
+        // storage variables
+        var foodType = "";
+        var foodName = "";
+        var foodQuantity = "";
+
+        getForm.addEventListener("submit", function () {
+          event.preventDefault();
+
+          foodType = event.target.foodType.value;
+          foodName = event.target.foodName.value;
+          foodQuantity = event.target.foodQuantity.value;
+
+          var foodOrderDetails = new foodOrder(
+            foodType,
+            foodName,
+            foodQuantity
+          );
+
+          console.log(foodOrderDetails);
+        });
+
+        function clickHandler() {
+
+         var addRow = document.createElement ("tr");
+
+          var foodTypeLi =  document.createElement("td");
+          foodTypeLi.innerText = foodType;
+
+          var foodNameLi = document.createElement("td");
+          foodNameLi.innerText = foodName;
+
+          var foodQuantityLi = document.createElement("td");
+          foodQuantityLi.innerText = foodQuantity;
+
+          
+          addRow.appendChild(foodTypeLi);
+          addRow.appendChild(foodNameLi);
+          addRow.appendChild(foodQuantityLi);
+
+          document.getElementById("hero1").appendChild(addRow);
+        }
+
+  
+      </script>
+    </div>
+  </body>
+</html>

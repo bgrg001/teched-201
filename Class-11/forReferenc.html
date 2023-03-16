@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    </style>
+  </head>
+
+  <body>
+    <h1>Pirates and their drinks</h1>
+
+    <button onclick="drinkSelector ()">Select your drinks here!</button>
+   
+    <div id="Pirates"></div>
+
+    <script>
+      function drinkSelector() {
+        console.log("yo ho ho"); 
+
+        var pirateName = prompt("Names of pirate");
+        var drinkOne = prompt("What drink would you like?");
+        var drinkTwo = prompt("A second for the road?");
+
+        var ulEle = document.createElement("ul");
+
+        var pirateLi = document.createElement("li");
+        pirateLi.innerText = pirateName;
+
+        var drinkOneLi = document.createElement("li");
+        drinkOneLi.innerText = drinkOne;
+
+        var drinkTwoLi = document.createElement("li");
+        drinkTwoLi.innerText = drinkTwo; 
+
+        ulEle.appendChild(pirateLi);
+        ulEle.appendChild(drinkOneLi);
+        ulEle.appendChild(drinkTwoLi);
+
+        document.getElementById("Pirates").appendChild(ulEle);
+      }
+    </script>
+  </body>
+</html>
