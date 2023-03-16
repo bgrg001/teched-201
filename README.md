@@ -33,6 +33,8 @@ George starting 201 of the coding bootcamp
 
 ## Class nine 
 - if and else (game where you guess the number including ==, >,<)
+- Prompt asking question, appending input to list and rendering to front end
+- creating objects and assigning properties 
 
 ## Class eleven 
 - Form 1: Food database
