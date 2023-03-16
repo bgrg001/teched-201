@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <button onclick="clickhandler()">click here</button>
+    <script>
+      // "this" referes to the object itself --> carObject
+      // "this" should be inside a method(always)
+      // METHOD IS A FUNCTION INSIDE AN OBJECT
+
+      function clickhandler() {
+        var carColor = prompt("what colour is the car?");
+        var carBrand = prompt("what brand is the car?");
+
+        var carObject = {};
+
+        carObject.color = carColor;
+        carObject.brand = carBrand;
+
+        carObject.brand = function () {
+          return "The car is a" + this.brand;
+        };
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <button onclick="houseAttributes()">Enter your details here</button>
+
+    <script>
+      var arrayList = [];
+
+      function houseAttributes() {
+        var _roomOne = prompt("What do you want in the games room?");
+        var _roomTwo = prompt("What size bed do you want?");
+        var _roomThree = prompt("What do you want in the sports room?");
+        var _roomFour = prompt("What do you want in room four?");
+        var _garden = prompt("What do you want in the garden?");
+
+        class funHouse {
+          // properties --> room one, room two, room three, room four, garden, mode of transport
+          constructor(_gamesRoom, _bedSize, _sportsRoom, _roomFour, _garden) {
+            this.roomOne = _gamesRoom;
+            this.roomTwo = _bedSize;
+            this.roomThree = _sportsRoom;
+            this.roomFour = _roomFour;
+            this.garden = _garden;
+          }
+        }
+        const funHouseAttributes = new funHouse(
+          _roomOne,
+          _roomTwo,
+          _roomThree,
+          _roomFour,
+          _garden
+        );
+
+        console.log(funHouseAttributes);
+      }
+    </script>
+  </body>
+</html>

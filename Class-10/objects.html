@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <button onclick="clickHandler()">Click here</button>
+    <button onclick="clickHere()">Jane, click here</button>
+    <button onclick="clickNow()">Paisley, click here</button>
+    <button onclick="clicked()">Jez, click here</button>
+    <script>
+      //objects
+      function clickHandler() {
+        var georgeObj = {};
+
+        var name = prompt("enter your name");
+
+        georgeObj.CaptainOfTheBlackPearl = function () {
+          a = 10;
+          b = 2;
+          return a * b + " " + "years as Captain of the Black Pearl";
+        };
+
+        console.log(georgeObj.CaptainOfTheBlackPearl());
+        console.log(georgeObj.CaptainOfTheBlackPearl);
+      }
+
+      function clickHere() {
+        var janeObj = {};
+
+        var name = prompt("are you Jane?");
+
+        janeObj.LeaderOfTheIronBorne = function () {
+          a = 10;
+          b = 1;
+          return a * b + " " + "years as leader of the Iron Borne";
+        };
+
+        console.log(janeObj.LeaderOfTheIronBorne());
+        console.log(janeObj.LeaderOfTheIronBorne);
+      }
+
+      function clickNow() {
+        var paisleyObj = {};
+
+        var name = prompt("are you Paisley?");
+
+        paisleyObj.motherOfDragons = function () {
+          a = 100;
+          b = 1;
+          return a * b + " " + "years as the mother of dragons";
+        };
+
+        console.log(paisleyObj.motherOfDragons());
+        console.log(paisleyObj.motherOfDragons);
+      }
+
+      function clicked() {
+        var jezObj = {};
+
+        var name = prompt("are you Jez?");
+
+        jezObj.theNightKing = function () {
+          a = 100;
+          b = 1;
+          return a * b + " " + "years as Supreme Leader of the White Walkers";
+        };
+
+        console.log(jezObj.theNightKing());
+        console.log(jezObj.theNightKing);
+      }
+    </script>
+  </body>
+</html>
